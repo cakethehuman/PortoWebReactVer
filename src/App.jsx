@@ -17,7 +17,7 @@ import pandasLogo from './assets/Pandas.svg'
 import seabornLogo from './assets/seaborn.svg'
 
 //
-import fastApiLogo from './assets/fastApi.svg'
+import fastApiLogo from './assets/FastApi.svg'
 import raectLogo from './assets/react.svg'
 
 export default function App() {
