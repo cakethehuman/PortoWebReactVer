@@ -1,9 +1,9 @@
 import Navbar from './Navbar';
 
 // Main hero page image
-import ameProfile from './assets/profile/ame.jpg';
-import linkedinLogo from './assets/profile/linkedin.svg';
-import githubLogo from './assets/profile/github.svg';
+import ameProfile from './assets/Profile/ame.jpg';
+import linkedinLogo from './assets/Profile/linkedin.svg';
+import githubLogo from './assets/Profile/github.svg';
 
 // Machine learning skills
 import sklearnLogo from './assets/MLskills/sklearn.svg'
