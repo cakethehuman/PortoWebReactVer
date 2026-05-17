@@ -29,8 +29,11 @@ import phpLogo from './assets/Webskills/php.svg'
 
 // expreices fotos
 import soushinLogo from './assets/Experience/shoushin.png'
+
 // soushin
 import nihongo1 from './assets/Experience/Shoushin/Nihongo2025/foto1.jpeg'
+import inochi1 from './assets/Experience/Shoushin/baksos2026/Inochi.jpg'
+import stuban1 from './assets/Experience/Shoushin/Stuban2026/stuban.jpeg'
 
 import dcLogo from './assets/Experience/discord.svg'
 
@@ -65,16 +68,14 @@ export default function App() {
             SKILLS
           </h1>
         </div>
-        <div className="flex justify-center gap-65">
-          <h1 className="text-white font-bold text-3xl w-100 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-5 shadow-lg shadow-emerald-500">
-            ML
-          </h1>
-          <h1 className="text-white font-bold text-3xl w-100 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-5 shadow-lg shadow-emerald-500">
-            WEB
-          </h1>
-        </div>
-        <div className="flex flex-row gap-30 w-full max-w-7xl mx-auto">
-          <div className="flex-col border items-center max-w-2xl w-full h-auto bg-gray-800 border-5 border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
+        <div className="flex flex-col lg:flex-row gap-30 w-full max-w-7xl mx-auto">
+          <div className="flex-col border items-center max-w-2xl w-full h-auto 
+          bg-gray-800 border-5 border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
+            <div className='flex justify-center'>
+              <h1 className="text-white font-bold text-3xl w-90 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-3 shadow-lg shadow-emerald-500">
+                ML
+              </h1>
+            </div>
             <div className="grid grid-cols-3 gap-7 my-15 px-5 place-items-center">
               <img src={sklearnLogo} alt="sklearn" className="w-25 h-25 object-contain" />
               <img src={tensorflowLogo} alt="tensorflow" className="w-25 h-25 object-contain" />
@@ -87,7 +88,13 @@ export default function App() {
               <img src={seabornLogo} alt="tableau" className="w-25 h-25 object-contain" />
             </div>
           </div>
-          <div className="flex-col border items-center max-w-2xl w-full h-auto bg-gray-800 border-5 border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
+          <div className="flex-col border items-center max-w-2xl w-full h-auto bg-gray-800 border-5 
+          border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
+              <div className='flex justify-center'>
+                <h1 className="text-white font-bold text-3xl w-90 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-3 shadow-lg shadow-emerald-500">
+                  WEB
+                </h1>
+              </div>
             <div className="grid grid-cols-3 gap-5 my-15 place-items-center">
               <img src={fastApiLogo} alt="FastAPI" className="w-25 h-25 object-contain" />
               <img src={raectLogo} alt="Laravel" className="w-25 h-25 object-contain" />
@@ -106,38 +113,38 @@ export default function App() {
       {/* Experience Section */}
       <section id="Exprerience">
         <div className="flex justify-center">
-          <h1 className="text-white font-bold text-3xl w-60 h-15 py-2 text-center border-2 bg-gray-800 border-white rounded-full m-7 shadow-xl shadow-white">
+          <h1 className="text-white font-bold text-3xl w-xs h-15 py-2 text-center border-2 bg-gray-800 border-white rounded-full m-7 shadow-xl shadow-white">
             EXPERIENCE
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-white max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
+          <div className="border border-3 border-white max-w-7xl px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
             <div className="flex flex-col gap-10">
-              <div className='border border-3 border-red-700 w-full h-auto px-10 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
+              <div className='border border-3 border-red-700 px-10 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
               <div className="flex flex-row gap-10">
                 <img src={soushinLogo} className="w-23 h-25" alt="Shoushin Logo" />
                 <div className="flex flex-col">
                   <h1 className="text-white text-3xl">Sekretaris 2</h1>
                   <p className="text-white text-sm">Nov 2025 - Now</p>
                   <div className='flex justify-center'>
-                    <p className="border border-2 rounded-full border-red-700 bg-red-700 w-60 px-5 py-2 text-center text-white text-bold m-2">Pengalaman Proker</p>
+                    <p className="border border-2 rounded-full border-red-700 bg-red-700 px-5 py-2 text-center text-white text-bold m-2">Pengalaman Proker</p>
                   </div>
-                    <div className="grid grid-cols-3 gap-7">
+                    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
                         {[
                           { title: "Nihongo Contest 2025", 
                             job: "Anggota Dana",
                             desc : "Bantu mendapatkan dana untuk acara",
                             image: nihongo1 },
-                          { title: "Nihongo Contest 2025", 
+                          { title: "Inochi No Tane 2026", 
                             job: "Anggota Dana",
                             desc : "Bantu mendapatkan dana untuk acara",
-                            image: nihongo1 },
-                          { title: "Nihongo Contest 2025", 
-                            job: "Anggota Dana",
-                            desc : "Bantu mendapatkan dana untuk acara",
-                            image: nihongo1 },
+                            image: inochi1 },
+                          { title: "Studi Banding 2026", 
+                            job: "Anggota Humas",
+                            desc : "Menjadi TM",
+                            image: stuban1 },
                         ].map((cert, index) => (
-                          <div key={index} className="flex flex-col border border-3 border-red-700 max-w-xl w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
+                          <div key={index} className="flex flex-col border border-3 border-red-700 px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
                             <img src={cert.image} alt = {cert.image}/>
                             <h1 className="text-white text-md font-bold">{cert.title}</h1>
                             <p className="text-white text-sm font-bold">{cert.job}</p>
@@ -169,7 +176,7 @@ export default function App() {
         </div>
         <div className="flex justify-center">
           <div className="border border-3 border-blue-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-lg">
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
                 { title: "Project will be inserted when cake feel like doing it", 
                   desc: "Note : maybe" },
@@ -194,9 +201,11 @@ export default function App() {
         </div>
         <div className="flex justify-center">
           <div className="border border-3 border-red-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-red-500">
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
-                { title: "DeepLearning.AI TensorFlow Developer Specialization", desc: "In this certification i learn alot about tensorflow like NLP,Timeseries, and CNN" },
+                { title: "DeepLearning.AI TensorFlow Developer Specialization", 
+                  desc: "In this certification i learn alot about tensorflow like NLP,Timeseries, and CNN",
+                  link: "" },
                 { title: "DeepLearning.AI Machine learning", desc: "Learn the core of machine learning from the maths" },
                 { title: "Google Data Analytics", desc: "Learned about data analysis ecosystems" },
                 { title: "MySkill SQL for Data Analytics", desc: "In this certification i learn alot about advanced SQL syntax" },

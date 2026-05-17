@@ -3,12 +3,12 @@ export default function Navbar() {
     <div className="w-full bg-gray-900"> {/* Ensuring dark background container */}
       <nav className="bg-gray-800/50 backdrop-blur-sm sticky top-0 z-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-20 items-center justify-between">
             <div className="flex items-center justify-center relative w-full">
               
               {/* Desktop Menu */}
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+              <div>
+                <div className="flex items-baseline space-x-4">
                   
                   <a href="#Home" className="px-3 py-2 text-sm font-medium 
                   text-gray-300 hover:bg-yellow-400/20 
@@ -46,6 +46,16 @@ export default function Navbar() {
                     rounded-full transition duration-300"
                   >
                     Projects
+                  </a>
+                  <a 
+                    href="#Projects" 
+                    className="px-3 py-2 text-sm font-medium 
+                    text-gray-300 hover:bg-red-400/20 
+                    hover:text-red-300 border-2 
+                    border-red-400/40 
+                    rounded-full transition duration-300"
+                  >
+                    Certification
                   </a>
                 </div>
               </div>
