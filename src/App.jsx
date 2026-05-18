@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 
 // Main hero page image
 import ameProfile from './assets/Profile/ame.jpg';
+import ame from "./assets/Profile/ame.gif";
 import linkedinLogo from './assets/Profile/linkedin.svg';
 import githubLogo from './assets/Profile/github.svg';
 
@@ -43,10 +44,12 @@ export default function App() {
       <Navbar></Navbar>
       {/* Home Section */}
       <section className="flex justify-center m-5" id="Home">
-        <div className="flex flex-col items-center max-w-7xl w-full h-auto px-25 py-10 bg-gray-800 text-white border-3 border-yellow-200 rounded-2xl shadow-lg shadow-yellow-500">
-          <img src={ameProfile} alt="Ame Pfp" className="center w-42 h-42 rounded-full" />
-          <h1 className="text-3xl">Hello Im cake...👋</h1>
-          <h1 className="text-xl m-1">A Data Nerd</h1>
+        <div className="flex flex-col items-center max-w-7xl w-full h-auto px-25 py-10 bg-gray-800 bg-cover bg-center 
+        text-white border-3 border-yellow-200 rounded-2xl shadow-lg shadow-yellow-500"
+        style={{ backgroundImage: `url(${ame})` }}>
+          <img src={ameProfile} alt="Ame Pfp" className="center w-42 h-42 rounded-full m-1 shadow-xl shadow-yellow-300" />
+          <h1 className="text-3xl text-white font-bold border border-3 rounded-full px-3 py-1 bg-pink-400 border-pink-400">Hello Im cake...👋</h1>
+          <h1 className="text-xl text-blue-600 m-1">A Data Nerd</h1>
           <div className="flex flex-row">
             <a href="https://www.linkedin.com/" className="m-2" target="_blank" rel="noreferrer">
               <img src={linkedinLogo} className="w-7 h-7" alt="LinkedIn" />
@@ -69,7 +72,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row gap-30 w-full max-w-7xl mx-auto">
-          <div className="flex-col border items-center max-w-2xl w-full h-auto 
+          <div className="flex-col border items-center w-full h-auto 
           bg-gray-800 border-5 border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
             <div className='flex justify-center'>
               <h1 className="text-white font-bold text-3xl w-90 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-3 shadow-lg shadow-emerald-500">
@@ -88,7 +91,7 @@ export default function App() {
               <img src={seabornLogo} alt="tableau" className="w-25 h-25 object-contain" />
             </div>
           </div>
-          <div className="flex-col border items-center max-w-2xl w-full h-auto bg-gray-800 border-5 
+          <div className="flex-col border items-center w-full h-auto bg-gray-800 border-5 
           border-emerald-500 rounded-3xl shadow-xl shadow-emerald-500/50">
               <div className='flex justify-center'>
                 <h1 className="text-white font-bold text-3xl w-90 h-15 py-2 text-center border-2 bg-gray-800 border-emerald-500 rounded-full m-3 shadow-lg shadow-emerald-500">
@@ -156,10 +159,12 @@ export default function App() {
                 </div>
               </div>
               <div className="flex flex-row gap-10">
-                <img src={dcLogo} className="w-23 h-25" alt="Discord" />
+                <div className='border border-3 border-blue-400 w-full px-10 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-400 gap-2'>
                 <div className="flex flex-col"> 
+                  <img src={dcLogo} className="w-23 h-25" alt="Discord" />
                   <h1 className="text-white text-3xl">Discord Bot Dev</h1>
                   <p className="text-white text-sm">Nov 2024 - Feb 2025</p>
+                  </div>
                 </div>
               </div>
             </div>
