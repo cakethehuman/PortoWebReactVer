@@ -205,17 +205,27 @@ export default function App() {
               {[
                 { title: "DeepLearning.AI TensorFlow Developer Specialization", 
                   desc: "In this certification i learn alot about tensorflow like NLP,Timeseries, and CNN",
-                  link: "" },
-                { title: "DeepLearning.AI Machine learning", desc: "Learn the core of machine learning from the maths" },
-                { title: "Google Data Analytics", desc: "Learned about data analysis ecosystems" },
-                { title: "MySkill SQL for Data Analytics", desc: "In this certification i learn alot about advanced SQL syntax" },
-                { title: "Data analysis using real world data", desc: "Working through dirty datasets and engineering insights" },
-                { title: "ISE! Academy: Data Science for Business 2025", desc: "Applying predictive modeling to business operations" }
+                  link: "https://www.coursera.org/account/accomplishments/specialization/BVJ07ZFBHMCY" },
+                { title: "DeepLearning.AI Machine learning", 
+                  desc: "Learn the core of machine learning from the maths",
+                  link : "https://www.coursera.org/account/accomplishments/specialization/certificate/KR8JVMN0F1QX" },
+                { title: "Google Data Analytics", 
+                  desc: "Learned about data analysis ecosystems",
+                  link : "https://www.coursera.org/account/accomplishments/professional-cert/certificate/6UV12SPIYDGG"},
+                { title: "MySkill SQL for Data Analytics", 
+                  desc: "In this certification i learn alot about advanced SQL syntax",
+                  link: "https://storage.googleapis.com/myskill-v2-certificates/topic-DDujKITvy3VJuXrhC2ou/8ZzO3vZhbiMhFwYHuOSrPHYcO7u1-KSu9ZYy4GCk2HZXlrHdj.pdf" },
+                { title: "Data analysis using real world data", 
+                  desc: "Working through dirty datasets and engineering insights",
+                  link: "https://udemy-certificate.s3.amazonaws.com/image/UC-027e05f2-5616-4a13-8dea-ea6f8b591065.jpg" },
+                { title: "ISE! Academy: Data Science for Business 2025", 
+                  desc: "Applying predictive modeling to business operations",
+                  link: "https://www.linkedin.com/in/willson-putra-hadinata-7b118b330/overlay/Certifications/1840233608/treasury/?profileId=ACoAAFNR4rUBzF5VsGfN6RcK856DXRydxuiDCcM" }
               ].map((cert, index) => (
                 <div key={index} className="flex flex-col border border-3 border-red-700 max-w-xl w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
                   <h1 className="text-white text-md font-bold">{cert.title}</h1>
                   <p className="text-white text-md text-xs">{cert.desc}</p>
-                  <a href="#" className="text-white border border-1 w-30 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1 text-center">🔗Image link</a>
+                  <a href={cert.link} className="text-white border border-1 w-30 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1 text-center">🔗Image link</a>
                 </div>
               ))}
             </div>      
