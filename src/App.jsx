@@ -48,8 +48,8 @@ export default function App() {
         text-white border-3 border-yellow-200 rounded-2xl shadow-lg shadow-yellow-500"
         style={{ backgroundImage: `url(${ame})` }}>
           <img src={ameProfile} alt="Ame Pfp" className="center w-42 h-42 rounded-full m-1 shadow-xl shadow-yellow-300" />
-          <h1 className="text-3xl text-white font-bold border border-3 rounded-full px-3 py-1 bg-pink-400 border-pink-400">Hello Im cake...👋</h1>
-          <h1 className="text-xl text-blue-600 m-1">A Data Nerd</h1>
+          <h1 className="text-3xl text-white font-bold border border-3 rounded-full px-2 py-1 bg-pink-400 border-pink-400">ケーキ</h1>
+          <h1 className="text-xl text-white font-bold m-1 border border-3 border-blue-400 bg-blue-400 rounded-full px-2 py-1">A Data Nerd</h1>
           <div className="flex flex-row">
             <a href="https://www.linkedin.com/" className="m-2" target="_blank" rel="noreferrer">
               <img src={linkedinLogo} className="w-7 h-7" alt="LinkedIn" />
@@ -123,8 +123,8 @@ export default function App() {
         <div className="flex justify-center">
           <div className="border border-3 border-white max-w-7xl px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
             <div className="flex flex-col gap-10">
-              <div className='border border-3 border-red-700 px-10 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
-              <div className="flex flex-row gap-10">
+              <div className='border border-3 border-red-700 px-10 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
+              <div className="flex flex-col lg:flex-row gap-10">
                 <img src={soushinLogo} className="w-23 h-25" alt="Shoushin Logo" />
                 <div className="flex flex-col">
                   <h1 className="text-white text-3xl">Sekretaris 2</h1>
@@ -147,7 +147,7 @@ export default function App() {
                             desc : "Menjadi TM",
                             image: stuban1 },
                         ].map((cert, index) => (
-                          <div key={index} className="flex flex-col border border-3 border-red-700 px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
+                          <div key={index} className="flex flex-col border border-3 border-red-700 px-5 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
                             <img src={cert.image} alt = {cert.image}/>
                             <h1 className="text-white text-md font-bold">{cert.title}</h1>
                             <p className="text-white text-sm font-bold">{cert.job}</p>
