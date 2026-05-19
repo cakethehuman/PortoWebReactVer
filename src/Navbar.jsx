@@ -4,11 +4,11 @@ export default function Navbar() {
       <nav>
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <div className="flex items-center justify-center relative border border-white rounded-full shadow-md shadow-white w-full py-2">
+            <div className="flex items-center justify-center relative border border-white shadow shadow-white shadow-md rounded-full w-xl lg:w-full py-2">
               
               {/* Desktop Menu */}
               <div>
-                <div className="flex flex-row gap-3">
+                <div className="flex flex-row gap-2">
                   
                   <a href="#Home" className="px-2 py-1 text-sm font-medium 
                   text-gray-300 hover:bg-yellow-400/20 

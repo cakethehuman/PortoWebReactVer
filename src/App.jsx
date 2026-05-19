@@ -186,10 +186,10 @@ export default function App() {
                 { title: "Project will be inserted when cake feel like doing it", 
                   desc: "Note : maybe" },
               ].map((cert, index) => (
-                <div key={index} className="flex flex-col border border-3 border-blue-700 max-w-xl w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-500 gap-2">
+                <div key={index} className="flex flex-col border border-3 border-blue-700 w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-500 gap-2">
                   <h1 className="text-white text-md font-bold">{cert.title}</h1>
                   <p className="text-white text-md text-xs">{cert.desc}</p>
-                  <a href="#" className="text-white border border-1 w-30 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1 text-center">🔗Image link</a>
+                  <a href="#" className="text-white border border-1 w-22 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1">🔗 LINK</a>
                 </div>
               ))}
             </div>
@@ -227,10 +227,10 @@ export default function App() {
                   desc: "Applying predictive modeling to business operations",
                   link: "https://www.linkedin.com/in/willson-putra-hadinata-7b118b330/overlay/Certifications/1840233608/treasury/?profileId=ACoAAFNR4rUBzF5VsGfN6RcK856DXRydxuiDCcM" }
               ].map((cert, index) => (
-                <div key={index} className="flex flex-col border border-3 border-red-700 max-w-xl w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
+                <div key={index} className="flex flex-col border border-3 border-red-700 w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
                   <h1 className="text-white text-md font-bold">{cert.title}</h1>
                   <p className="text-white text-md text-xs">{cert.desc}</p>
-                  <a href={cert.link} className="text-white border border-1 w-30 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1 text-center">🔗Image link</a>
+                  <a href={cert.link} className="text-white border border-1 w-20 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1">🔗 LINK</a>
                 </div>
               ))}
             </div>      
