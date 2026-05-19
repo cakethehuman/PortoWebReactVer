@@ -38,6 +38,9 @@ import stuban1 from './assets/Experience/Shoushin/Stuban2026/stuban.jpeg'
 
 import dcLogo from './assets/Experience/discord.svg'
 
+// Education
+import untar from './assets/Education/Logo_Universitas_Tarumanagara.png'
+
 export default function App() {
   return (
     <>
@@ -235,6 +238,37 @@ export default function App() {
               ))}
             </div>      
           </div>
+        </div>
+      </section>
+      <section id='Education'>
+        <div className="flex justify-center">
+          <h1 className="text-white font-bold text-3xl w-60 h-15 py-2 text-center border-2 bg-gray-800 border-pink-500 rounded-full m-10 shadow-xl shadow-pink-500/50">
+              Education
+          </h1>
+        </div>
+        <div className="flex justify-center">
+          <div className="border border-3 border-pink-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-xl shadow-pink-500">
+            <div className="flex flex-col w-full">
+              {[
+                { image:untar,
+                  name: "UNTAR",
+                  jurusan : "Teknik Informatika", 
+                  time: "Agustus 2025 - Now" },
+              ].map((cert, index) => (
+                <div key={index} className="flex flex-col border border-3 
+                border-pink-700 w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-pink-500 gap-2">
+                  <div className="flex flex-row">
+                    <img src={cert.image} alt="untar" className='w-24 h-24'/>
+                    <div className='flex flex-col m-5'>
+                      <h1 className="text-white text-2xl font-bold">{cert.name}</h1>
+                      <p className="text-white text-md">{cert.time}</p>
+                      <p className="text-white text-md font-bold">{cert.jurusan}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>  
         </div>
       </section>
     </>
