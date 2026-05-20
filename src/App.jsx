@@ -124,7 +124,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-white max-w-7xl px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
+          <div className="border border-3 border-white max-full lg:max-w-7xl px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
             <div className="flex flex-col gap-10">
               <div className='border border-3 border-red-700 px-10 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
               <div className="flex flex-col lg:flex-row gap-10">
@@ -247,7 +247,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-pink-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-xl shadow-pink-500">
+          <div className="border border-3 border-pink-700 w-full lg:max-w-7xl h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-xl shadow-pink-500">
             <div className="flex flex-col w-full">
               {[
                 { image:untar,
