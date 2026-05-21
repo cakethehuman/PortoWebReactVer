@@ -124,7 +124,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-white w-full lg:max-w-7xl px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
+          <div className="border border-3 border-white w-full lg:max-w-7xl px-5 lg:px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-white">
             <div className="flex flex-col gap-10">
               <div className='border border-3 border-red-700 px-10 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2'>
               <div className="flex flex-col lg:flex-row gap-10">
@@ -162,7 +162,7 @@ export default function App() {
                 </div>
               </div>
               <div className="flex flex-row gap-10">
-                <div className='border border-3 border-blue-400 w-full px-10 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-400 gap-2'>
+                <div className='border border-3 border-blue-400 w-full px-5 lg:px-25 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-400 gap-2'>
                 <div className="flex flex-col"> 
                   <img src={dcLogo} className="w-23 h-25" alt="Discord" />
                   <h1 className="text-white text-3xl">Discord Bot Dev</h1>
@@ -183,7 +183,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-blue-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-lg">
+          <div className="border border-3 border-blue-700 max-w-7xl w-full h-auto px-5 lg:px-25 py-18 bg-gray-800 rounded-2xl shadow-lg">
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
                 { title: "Project will be inserted when cake feel like doing it", 
@@ -208,7 +208,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-red-700 max-w-7xl w-full h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-red-500">
+          <div className="border border-3 border-red-700 max-w-7xl w-full h-auto px-5 lg:px-25 py-18 bg-gray-800 rounded-2xl shadow-lg shadow-red-500">
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
                 { title: "DeepLearning.AI TensorFlow Developer Specialization", 
@@ -247,7 +247,7 @@ export default function App() {
           </h1>
         </div>
         <div className="flex justify-center">
-          <div className="border border-3 border-pink-700 w-full lg:max-w-7xl h-auto px-25 py-18 bg-gray-800 rounded-2xl shadow-xl shadow-pink-500">
+          <div className="border border-3 border-pink-700 w-full lg:max-w-7xl h-auto px-5 lg:px-25 py-18 bg-gray-800 rounded-2xl shadow-xl shadow-pink-500">
             <div className="flex flex-col w-full">
               {[
                 { image:untar,
