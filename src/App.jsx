@@ -139,15 +139,15 @@ export default function App() {
                         {[
                           { title: "Nihongo Contest 2025", 
                             job: "Anggota Dana",
-                            desc : "Bantu mendapatkan dana untuk acara",
+                            desc : "Membantu mendapatkan dana untuk acara tersebut serta membantu mendapatkan ide barang apa yang ingin di jual",
                             image: nihongo1 },
                           { title: "Inochi No Tane 2026", 
                             job: "Anggota Dana",
-                            desc : "Bantu mendapatkan dana untuk acara",
+                            desc : "Membantu mendapatkan dana untuk acara serta membantu PO",
                             image: inochi1 },
                           { title: "Studi Banding 2026", 
                             job: "Anggota Humas",
-                            desc : "Menjadi TM",
+                            desc : "Membantu di grup utama untuk menjawab pertanyaan peserta serta menjadi pembicara di TM",
                             image: stuban1 },
                         ].map((cert, index) => (
                           <div key={index} className="flex flex-col border border-3 border-red-700 px-5 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
@@ -215,7 +215,7 @@ export default function App() {
                   desc: "In this certification i learn alot about tensorflow like NLP,Timeseries, and CNN",
                   link: "https://www.coursera.org/account/accomplishments/specialization/BVJ07ZFBHMCY" },
                 { title: "DeepLearning.AI Machine learning", 
-                  desc: "Learn the core of machine learning from the maths",
+                  desc: "Learn the core of machine learning like the math the machine learning",
                   link : "https://www.coursera.org/account/accomplishments/specialization/certificate/KR8JVMN0F1QX" },
                 { title: "Google Data Analytics", 
                   desc: "Learned about data analysis ecosystems",
