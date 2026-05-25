@@ -38,6 +38,9 @@ import stuban1 from './assets/Experience/Shoushin/Stuban2026/stuban.jpeg'
 
 import dcLogo from './assets/Experience/discord.svg'
 
+// Projects
+import kaggleAnimeData from './assets/Projects/kaggleData.png'
+
 // Education
 import untar from './assets/Education/Logo_Universitas_Tarumanagara.png'
 
@@ -139,15 +142,15 @@ export default function App() {
                         {[
                           { title: "Nihongo Contest 2025", 
                             job: "Anggota Dana",
-                            desc : "Membantu mendapatkan dana untuk acara tersebut serta membantu mendapatkan ide barang apa yang ingin di jual",
+                            desc : "Handled funds for the event and contributed ideas for merchandise and product sales as well helped with PO sales.",
                             image: nihongo1 },
                           { title: "Inochi No Tane 2026", 
                             job: "Anggota Dana",
-                            desc : "Membantu mendapatkan dana untuk acara serta membantu PO",
+                            desc : "Handled funds for the event and contributed ideas for merchandise and product sales as well helped with PO sales.",
                             image: inochi1 },
                           { title: "Studi Banding 2026", 
                             job: "Anggota Humas",
-                            desc : "Membantu di grup utama untuk menjawab pertanyaan peserta serta menjadi pembicara di TM",
+                            desc : "Helped participants by answering questions in the group and also served as a speaker during the technical meeting.",
                             image: stuban1 },
                         ].map((cert, index) => (
                           <div key={index} className="flex flex-col border border-3 border-red-700 px-5 py-5 w-full bg-gray-800 rounded-2xl shadow-lg shadow-red-500 gap-2">
@@ -186,13 +189,25 @@ export default function App() {
           <div className="border border-3 border-blue-700 max-w-7xl w-full h-auto px-5 lg:px-25 py-18 bg-gray-800 rounded-2xl shadow-lg">
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
-                { title: "Project will be inserted when cake feel like doing it", 
-                  desc: "Note : maybe" },
+                { title: "Kaggle anime data for recommendation system", 
+                  image: kaggleAnimeData,
+                  desc: "Gather the data from JIKAN.API getting 5000+ view and 900+ downloads",
+                  link : "https://www.kaggle.com/datasets/wiltheman/anime-data-set-for-ml"},
+                {
+                  title : "Anime Recommendation System",
+                },
+                {
+                  title : "Anime Recommendation System",
+                },
+                {
+                  title : "Anime Recommendation System",
+                }
               ].map((cert, index) => (
                 <div key={index} className="flex flex-col border border-3 border-blue-700 w-full h-auto px-5 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-500 gap-2">
+                  <img src={cert.image} alt="" />
                   <h1 className="text-white text-md font-bold">{cert.title}</h1>
                   <p className="text-white text-md text-xs">{cert.desc}</p>
-                  <a href="#" className="text-white border border-1 w-22 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1">🔗 LINK</a>
+                  <a href={cert.link} className="text-white border border-1 w-22 rounded-full border-red-500 bg-red-500 hover:bg-red-500/70 hover:border-red-500/70 px-2 py-1">🔗 LINK</a>
                 </div>
               ))}
             </div>
