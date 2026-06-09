@@ -166,10 +166,12 @@ export default function App() {
               </div>
               <div className="flex flex-row gap-10">
                 <div className='border border-3 border-blue-400 w-full px-5 lg:px-25 py-5 bg-gray-800 rounded-2xl shadow-lg shadow-blue-400 gap-2'>
-                <div className="flex flex-col"> 
-                  <img src={dcLogo} className="w-23 h-25" alt="Discord" />
-                  <h1 className="text-white text-3xl">Discord Bot Dev</h1>
-                  <p className="text-white text-sm">Nov 2024 - Feb 2025</p>
+                <div className="flex flex-row"> 
+                  <img className="w-25 h-25" src= {dcLogo} alt="Discord Logo" />
+                  <div className='flex flex-col justify-center mx-5'>
+                    <h1 className="text-white text-3xl">Discord Bot Dev</h1>
+                    <p className="text-white text-sm">2024-2025</p>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -191,7 +193,7 @@ export default function App() {
               {[
                 { title: "Kaggle anime data for recommendation system", 
                   image: kaggleAnimeData,
-                  desc: "Gather the data from JIKAN.API getting 5000+ view and 900+ downloads",
+                  desc: "Collected anime data using the Jikan API, performed ETL (Extract, Transform, Load) processes, and published the dataset on Kaggle, achieving 5,000+ views and 900+ downloads.",
                   link : "https://www.kaggle.com/datasets/wiltheman/anime-data-set-for-ml"},
                 {
                   title : "Anime Recommendation System",
@@ -227,19 +229,19 @@ export default function App() {
             <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-7">
               {[
                 { title: "DeepLearning.AI TensorFlow Developer Specialization", 
-                  desc: "In this certification i learn alot about tensorflow like NLP,Timeseries, and CNN",
+                  desc: "Completed hands-on training in TensorFlow, covering Convolutional Neural Networks (CNNs), Natural Language Processing (NLP), and Time Series forecasting for real-world deep learning applications.",
                   link: "https://www.coursera.org/account/accomplishments/specialization/BVJ07ZFBHMCY" },
                 { title: "DeepLearning.AI Machine learning", 
-                  desc: "Learn the core of machine learning like the math the machine learning",
+                  desc: "Learned the fundamental concepts of machine learning, including the mathematical foundations, supervised and unsupervised learning algorithms, and model evaluation techniques.",
                   link : "https://www.coursera.org/account/accomplishments/specialization/certificate/KR8JVMN0F1QX" },
                 { title: "Google Data Analytics", 
-                  desc: "Learned about data analysis ecosystems",
+                  desc: "Learned data cleaning, visualization, SQL, spreadsheets, and exploratory data analysis to generate actionable business insights.",
                   link : "https://www.coursera.org/account/accomplishments/professional-cert/certificate/6UV12SPIYDGG"},
                 { title: "MySkill SQL for Data Analytics", 
-                  desc: "In this certification i learn alot about advanced SQL syntax",
+                  desc: "Learned how to use SQL to get business insights",
                   link: "https://storage.googleapis.com/myskill-v2-certificates/topic-DDujKITvy3VJuXrhC2ou/8ZzO3vZhbiMhFwYHuOSrPHYcO7u1-KSu9ZYy4GCk2HZXlrHdj.pdf" },
                 { title: "Data analysis using real world data", 
-                  desc: "Working through dirty datasets and engineering insights",
+                  desc: "Learned how to analize real world data",
                   link: "https://udemy-certificate.s3.amazonaws.com/image/UC-027e05f2-5616-4a13-8dea-ea6f8b591065.jpg" },
                 { title: "ISE! Academy: Data Science for Business 2025", 
                   desc: "Applying predictive modeling to business operations",
