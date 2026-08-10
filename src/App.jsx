@@ -64,7 +64,7 @@ export default function App() {
               <img src={githubLogo} className="w-7 h-7" alt="GitHub" />
             </a>
           </div>
-          <a href="https://drive.google.com/drive/folders/1MOEpcpJEQ2_d_RiriiEvaeyyVPjqlgf4" className="bg-gray-800 hover:bg-yellow-700/50 border-3 border-yellow-400 rounded-full px-7 py-2 m-1" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1gb9TWPT6XG6LhRAJqJk7ylVs-xq1mwxz/view?usp=sharing" className="bg-gray-800 hover:bg-yellow-700/50 border-3 border-yellow-400 rounded-full px-7 py-2 m-1" target="_blank" rel="noreferrer">
             Download CV 
           </a>
         </div> 
